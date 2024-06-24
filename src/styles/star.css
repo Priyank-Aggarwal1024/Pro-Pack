@@ -1,0 +1,143 @@
+.pro-pac-star-div {
+    display: flex;
+    gap: 5px;
+}
+
+.pro-pac-star {
+    width: 25.264px;
+    height: 25.264px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pro-pac-previous-arrow {
+    display: flex;
+    width: 44.212px;
+    height: 44.212px;
+    padding: 9.474px 9.475px 9.474px 9.473px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 80px;
+    border: 1.053px solid var(--grey, #5D6165);
+    background: rgba(255, 255, 255, 0.00);
+    margin-right: 15px;
+}
+
+.pro-pac-previous-arrow>svg {
+    width: 25.264px;
+    height: 25.264px;
+    flex-shrink: 0;
+}
+
+.pro-pac-next-arrow {
+    display: flex;
+    width: 44.212px;
+    height: 44.212px;
+    padding: 9.474px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 15px;
+
+    border: 1.053px solid var(--grey, #5D6165);
+    background: rgba(255, 255, 255, 0.00);
+    /* background: var(--Linear, linear-gradient(90deg, #800080 3.92%, #B466C1 52.78%, #800080 92.42%)); */
+
+}
+
+.pro-pac-next-arrow:hover>svg>path,
+.pro-pac-previous-arrow:hover>svg>path {
+    stroke: white;
+
+}
+
+.pro-pac-next-arrow:hover,
+.pro-pac-previous-arrow:hover {
+    background: var(--Linear, linear-gradient(90deg, #800080 3.92%, #B466C1 52.78%, #800080 92.42%));
+    border: none;
+}
+
+.pro-pac-next-arrow>svg {
+    width: 25.264px;
+    height: 25.264px;
+    border-radius: 50%;
+
+    flex-shrink: 0;
+}
+
+@media (width<1080px) {
+    .pro-pac-star>svg {
+        width: 18px;
+        height: 18px;
+
+    }
+
+    .pro-pac-star {
+        width: 18px;
+        height: 18px;
+
+    }
+
+    .pro-pac-star-div {
+        gap: 2px;
+    }
+
+    .pro-pac-next-arrow {
+        margin-left: 8px;
+    }
+
+    .pro-pac-previous-arrow {
+        margin-right: 8px;
+    }
+
+}
+
+@media (width<480px) {
+    .pro-pac-star-div {
+        flex-wrap: wrap;
+
+    }
+
+    .pro-pac-star,
+    .pro-pac-star>svg {
+        width: 14.574px;
+        height: 14.574px;
+    }
+
+    .pro-pac-tct-l {
+        gap: 8px;
+    }
+
+    .pro-pac-next-arrow,
+    .pro-pac-previous-arrow {
+        width: 28px;
+        height: 28px;
+        /* margin: 0; */
+        position: relative;
+        padding: 0;
+
+        border-radius: 50%;
+    }
+
+
+    .pro-pac-previous-arrow>svg {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, 20%);
+    }
+
+    .pro-pac-next-arrow>svg {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, 20%);
+    }
+}

@@ -1,0 +1,447 @@
+.pro-pac-hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.pro-pac-section,
+.pro-pac-section.pro-pac-hero-section {
+    padding-top: 16px;
+}
+
+.pro-pac-hero-section>div {
+    width: 50%;
+}
+
+.pro-pac-hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.pro-pac-hero-left-iit {
+    display: flex;
+    padding: 10px 21px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    border: 1px solid #800080;
+    background: var(--Color-2, #FFF);
+    width: fit-content;
+}
+
+.pro-pac-hero-left-top {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.pro-pac-main-heading {
+    line-height: 120%;
+    max-height: 264px;
+    font-size: clamp(36px, 4vw, 55px);
+}
+
+
+.pro-pac-hero-left-bottom-card {
+    display: flex;
+    gap: 10px;
+}
+
+.pro-pac-hlbc-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pro-pac-hlbc-card-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(128, 0, 128, 0.70);
+}
+
+.pro-pac-hero-left-svg {
+    width: 24px;
+    height: 24px;
+}
+
+.pro-pac-hero-right {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+
+.pro-pac-hero-right-design {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 600px;
+    height: 600px;
+    /* border-top-left-radius: 700px; */
+    border-bottom-left-radius: 600px;
+    background: var(--Linear, linear-gradient(188deg, rgba(128, 0, 128, 0.30) 6.4%, rgba(255, 134, 76, 0.08) 42.44%));
+    opacity: 0.7;
+    z-index: 1000;
+}
+
+.pro-pac-hero-right-series-1 {
+    padding-top: 28px;
+}
+
+.pro-pac-hero-right-series {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pro-pac-hero-right-series-1>.pro-pac-hero-right-card {
+    padding: 24px 26px;
+    z-index: 100;
+}
+
+.pro-pac-hero-right-series-2>.pro-pac-hero-right-card {
+    padding: 24px 9px;
+    z-index: 100;
+}
+
+.pro-pac-hero-right-card {
+    max-width: 192px;
+    border-radius: 17px;
+    background: var(--Color-2, #FFF);
+    box-shadow: 0px 4px 14.8px 0px rgba(0, 0, 0, 0.25);
+    height: 202px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pro-pac-hero-right-card>svg {
+    justify-self: center;
+}
+
+.pro-pac-hero-right-card-text {
+    line-height: 150%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.pro-pac-hero-image {
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    aspect-ratio: 1;
+}
+
+.pro-pac-hero-left-para {
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pro-pac-hero-bottom-div-outer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 44px;
+    padding: 65px 37.932px 49.466px 38px;
+    border-radius: 21px;
+    background: var(--Color-2, #FFF);
+    box-shadow: 0px 4px 29.7px 0px rgba(0, 0, 0, 0.11);
+
+}
+
+.pro-pac-hero-bottom-div {
+    width: 100%;
+    padding: 36px 64px;
+
+}
+
+.pro-pac-hbb-left {
+    display: flex;
+    width: 68.767px;
+    height: 68.767px;
+    padding: 11.75px 11.767px 12.017px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10.188px;
+    background: linear-gradient(96deg, rgba(128, 0, 128, 0.10) 22.35%, rgba(255, 134, 76, 0.10) 100%);
+}
+
+.pro-pac-hero-bottom-div-inner {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 120px;
+    row-gap: 44px;
+
+}
+
+.pro-pac-hero-bottom-div-box {
+    gap: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.pro-pac-hbb-right-heading {
+    color: #800080;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.pro-pac-hbb-right-para {
+    color: #303030;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pro-pac-hbb-left-3 {
+    padding: 0;
+}
+
+@media (width<1080px) {
+    .pro-pac-hero-bottom-div-inner {
+        justify-content: center;
+    }
+
+    .pro-pac-hero-bottom-div-box {
+        width: 220px;
+
+    }
+
+    .pro-pac-hbb-left {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (width<980px) {
+    .pro-pac-hero-section.pro-pac-section {
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding-top: 0px;
+    }
+
+    /* .pro-pac-hero-right-design {
+        right: -63px;
+        top: -250px;
+    } */
+    .pro-pac-hero-right {
+        position: relative;
+    }
+
+    .pro-pac-large-hero-design {
+        width: 100%;
+        height: 100%;
+        right: -50%;
+        z-index: 1000;
+        border-radius: 50%;
+    }
+
+    .pro-pac-hero-section>div {
+        width: 100%;
+    }
+
+
+    .pro-pac-main-heading {
+        font-size: 55px;
+        max-height: none;
+        width: 70%;
+    }
+
+    .pro-pac-main-heading>.pro-pac-text-light-pink {
+        background: var(--Linear, linear-gradient(96deg, rgba(128, 0, 128, 0.87) 22.35%, rgba(255, 134, 76, 0.87) 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+@media (width<780px) {
+    .pro-pac-main-heading {
+        font-size: 45px;
+        width: 100%;
+    }
+
+    .pro-pac-hero-left-para {
+        font-size: 16px;
+    }
+
+    section.pro-pac-hero-section {
+        padding-top: 50px;
+    }
+
+    .pro-pac-hero-bottom-div {
+        padding: 36px 32px;
+    }
+
+    .pro-pac-hero-bottom-div-inner {
+        justify-content: start;
+        column-gap: 100px;
+        row-gap: 23px;
+    }
+
+    .pro-pac-hero-bottom-div-box {
+        width: 220px;
+        gap: 9px;
+    }
+
+    .pro-pac-hero-bottom-div-outer {
+        flex-direction: row;
+        column-gap: 4px;
+        align-items: flex-start;
+    }
+
+    .pro-pac-hbb-right-heading {
+        font-size: 21px;
+    }
+
+    .pro-pac-hbb-right-para {
+        font-size: 14px;
+    }
+}
+
+@media (width<580px) {
+    .pro-pac-hero-left-svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    section.pro-pac-hero-section {
+        padding-top: 10px;
+    }
+
+    .pro-pac-hero-left-iit {
+        font-size: 14px;
+    }
+
+    .pro-pac-hero-bottom-div-box {
+        width: unset;
+        gap: 9px;
+    }
+
+    .pro-pac-hbb-right-heading {
+        font-size: 18px;
+    }
+
+    .pro-pac-hbb-right-para {
+        font-size: 12px;
+    }
+
+    .pro-pac-hero-bottom-div-inner {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+    }
+
+    .pro-pac-hero-bottom-div-outer {
+        flex-direction: row;
+        padding: 25px 14px;
+        justify-content: start;
+        align-items: start;
+
+
+    }
+
+    .pro-pac-hero-right {
+        gap: 12px;
+    }
+
+    .pro-pac-hero-bottom-div {
+        padding: 36px 16px;
+    }
+
+    .pro-pac-hero-right-series-1>.pro-pac-hero-right-card {
+        padding: 19px 21px;
+    }
+
+    .pro-pac-hero-right-series-2>.pro-pac-hero-right-card {
+        padding: 19.522px 7.384px 19.522px 6.652px;
+    }
+
+    .pro-pac-hlbc-card-right>svg {
+        width: 20px;
+    }
+
+    .pro-pac-hlbc-card {
+        gap: 3px;
+    }
+
+    .pro-pac-hbb-left {
+        display: flex;
+        width: 51.765px;
+        height: 51.765px;
+        padding: 7.686px 7.684px 7.685px 7.688px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (width<480px) {
+    .pro-pac-main-heading {
+        font-size: 34px;
+    }
+
+    .pro-pac-hero-left-bottom-card {
+        gap: 4px;
+    }
+
+    .pro-pac-hero-left-iit {
+        font-size: 12px;
+    }
+
+    .pro-pac-hlbc-card-left {
+        padding: 7px 4px;
+        gap: 5px;
+    }
+
+    .pro-pac-hero-bottom-div-outer {
+        padding: 22px 9px;
+    }
+}
+
+@media (width<360px) {
+    .pro-pac-hero-right {
+        flex-wrap: wrap;
+
+    }
+
+    .pro-pac-hero-bottom-div {
+        padding: 36px 9px;
+    }
+
+    .pro-pac-hero-right-series-1 {
+        padding-top: 0;
+    }
+}

@@ -1,0 +1,163 @@
+:root {
+    --Woodsmoke-950: #1B1B1D;
+    --light-black: #585858
+}
+
+body {
+    position: relative;
+}
+
+.pro-pac-text-black {
+    color: black;
+}
+
+.pro-pac-text-white {
+    color: white;
+}
+
+.pro-pac-text-pink {
+    color: #800080;
+}
+
+.pro-pac-text-light-pink {
+    color: var(--800080, rgba(128, 0, 128, 0.87));
+
+}
+
+.pro-pac-bg-light-pink {
+    background: rgba(128, 0, 128, 0.87);
+
+}
+
+.pro-pac-wood-smoke-950 {
+    color: var(--Woodsmoke-950);
+}
+
+.pro-pac-text-light-black {
+    color: var(--light-black);
+}
+
+.pro-pac-f-55 {
+    font-size: 55px;
+}
+
+.pro-pac-f-48 {
+    font-size: 48px;
+}
+
+.pro-pac-f-18 {
+    font-size: 18px;
+}
+
+.pro-pac-f-16 {
+    font-size: 16px;
+}
+
+.pro-pac-fw-400 {
+    font-weight: 400;
+}
+
+.pro-pac-fw-500 {
+    font-weight: 500;
+}
+
+.pro-pac-fw-600 {
+    font-weight: 600;
+}
+
+.pro-pac-fw-700 {
+    font-weight: 700;
+}
+
+.pro-pac-fw-800 {
+    font-weight: 800;
+}
+
+.pro-pac-fw-900 {
+    font-weight: 900;
+}
+
+.pro-pac-va-mid {
+    vertical-align: middle;
+}
+
+.pro-pac-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.pro-pac-section {
+    padding: 64px 64px;
+
+}
+
+.pro-pac-text-center {
+    text-align: center;
+}
+
+@media (width>1280px) {
+    .pro-pac-section {
+        max-width: 100%;
+    }
+}
+
+@media (width<1280px) {
+    .pro-pac-section {
+        padding: 64px 64px;
+    }
+}
+
+@media (width<1180px) {}
+
+@media (width<980px) {
+    .pro-pac-section {
+        padding: 64px 32px;
+    }
+}
+
+@media (width<780px) {
+    .pro-pac-section {
+        padding: 64px 32px;
+    }
+
+    .pro-pac-f-16 {
+        font-size: 15px;
+    }
+
+    .pro-pac-f-18 {
+        font-size: 15px;
+    }
+
+    .pro-pac-f-48 {
+        font-size: 38px;
+    }
+
+}
+
+@media (width<580px) {}
+
+@media (width<480px) {
+    .pro-pac-section {
+        padding: 48px 16px;
+    }
+
+    .pro-pac-f-48 {
+        font-size: 28px;
+    }
+
+    .pro-pac-f-16 {
+        font-size: 14px;
+    }
+
+    .pro-pac-f-18 {
+        font-size: 12px;
+    }
+}
+
+/* @media (width<400px) {
+    .pro-pac-section {
+        padding: 48px 12px;
+    }
+} */

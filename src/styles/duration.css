@@ -1,0 +1,46 @@
+.pro-pac-duration-box {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    border: 1px solid var(--Color-2, #800080);
+    background: rgba(255, 255, 255, 0.02);
+    color: #800080;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    /* 20.8px */
+}
+
+.pro-pac-duration-box>svg {
+    width: 24px;
+    height: 24px;
+}
+
+@media (width<780px) {
+    .pro-pac-duration-box {
+        font-size: 14px;
+    }
+}
+
+@media (width<580px) {
+    .pro-pac-duration-box {
+        font-size: 12px;
+    }
+
+    .pro-pac-duration-box>svg {
+        width: 18px;
+        height: 19px;
+    }
+}
+
+@media (width<480px) {
+    .pro-pac-duration-box {
+        padding: 10px 4px;
+    }
+}

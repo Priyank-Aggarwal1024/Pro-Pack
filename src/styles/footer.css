@@ -1,0 +1,121 @@
+section.pro-pac-section-footer {
+    padding: 64px 24px;
+    padding-bottom: 24px;
+}
+
+.pro-pac-footer {
+    border-radius: 21px;
+    background: #350B35;
+    width: 100%;
+    padding: 48px 20px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 34px;
+    /* justify-content: space-between; */
+    /* grid-template-rows: auto; */
+}
+
+.pro-pac-footer-sec2 .pro-pac-footer-sec-links {
+    display: flex;
+    align-items: center;
+    gap: 7.911px;
+}
+
+.pro-pac-footer>div {
+    /* min-width: 150px; */
+    margin-right: auto;
+}
+
+.pro-pac-section-footer {
+    padding: 64px 32px;
+}
+
+.pro-pac-footer-sec-heading {
+    color: var(--Color-2, #FFF);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.pro-pac-footer-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pro-pac-footer-email,
+.pro-pac-footer-phone {
+    color: var(--Color-2, #FFF);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+
+.pro-pac-footer-email {
+    margin-bottom: 16px;
+}
+
+.pro-pac-footer-sec1 .pro-pac-footer-sec-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+}
+
+.pro-pac-footer-address {
+    color: var(--Color-2, #FFF);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.pro-pac-footer-sec1 a {
+    color: var(--Color-2, #FFF);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+
+@media (width<780px) {
+    section.pro-pac-section-footer {
+        padding: 64px 24px;
+    }
+
+}
+
+@media (width<580px) {
+    section.pro-pac-section-footer {
+        padding: 32px 16px;
+    }
+
+    .pro-pac-footer {
+        padding: 48px 15px;
+    }
+
+    .pro-pac-footer-sec-links {
+        opacity: .8;
+    }
+}
+
+@media (width<480px) {
+    section.pro-pac-section-footer {
+        padding: 32px 8px;
+    }
+
+    .pro-pac-footer {
+        padding: 48px 10px;
+    }
+}

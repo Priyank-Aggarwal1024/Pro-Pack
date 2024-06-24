@@ -1,0 +1,236 @@
+.pro-pac-section-one-guarantee {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 32px;
+    overflow: hidden;
+}
+
+
+
+.pro-pac-og-heading {
+    margin-bottom: 50px;
+    width: 60%;
+}
+
+.pro-pac-og-left {
+    width: 100%;
+    /* min-width: 533px; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.pro-pac-og-cards {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pro-pac-og-card-icon {
+    display: flex;
+    width: 103.442px;
+    height: 103.442px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 104.436px;
+    background: var(--Linear, linear-gradient(90deg, #800080 3.92%, #B466C1 52.78%, #800080 92.42%));
+    position: absolute;
+    left: -50px;
+}
+
+.pro-pac-og-card-heading {
+    color: var(--800080, rgba(128, 0, 128, 0.87));
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 118.5%;
+    /* 35.55px */
+}
+
+.pro-pac-og-card-about {
+    color: var(--Woodsmoke-950, #1B1B1D);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pro-pac-og-svg {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.pro-pac-og-cards>div {
+    width: calc(100% - 50px);
+    display: inline-flex;
+    padding: 41.991px 13.152px 42.009px 66.848px;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    border-radius: 11.936px;
+    background: linear-gradient(97deg, rgba(0, 0, 0, 0.10) 3.05%, rgba(255, 255, 255, 0.20) 48.78%, rgba(0, 0, 0, 0.10) 95.62%);
+    box-shadow: 0px 0px 23.622px 0px rgba(255, 255, 255, 0.86);
+}
+
+.pro-pac-og-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+
+
+.pro-pac-og-right {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-self: flex-end; */
+    margin-left: auto;
+
+}
+
+.pro-pac-og-right-heading {
+    font-family: Inter;
+    font-size: 41.33px;
+    font-style: normal;
+    line-height: 120%;
+    text-align: start;
+    /* 49.596px */
+}
+
+.pro-pac-og-right>img {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+
+@media (width<1180px) {
+    .pro-pac-guarantee-img {
+        width: 80%;
+    }
+}
+
+@media (width<1080px) {
+
+    .pro-pac-og-heading {
+        width: 100%;
+    }
+
+    .pro-pac-og-right-heading {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .pro-pac-section-one-guarantee {
+        flex-direction: column-reverse;
+        align-items: start;
+        gap: 42px;
+    }
+
+    .pro-pac-og-left {
+        width: 100%;
+    }
+
+    .pro-pac-og-right {
+        width: 100%;
+        align-items: center;
+        margin-left: unset;
+        justify-content: center;
+    }
+}
+
+@media (width<780px) {
+
+    .pro-pac-guarantee-img-after,
+    .pro-pac-guarantee-img-before {
+        width: 320px;
+        height: 320px;
+    }
+
+    .pro-pac-og-card-heading {
+        font-size: 25px;
+    }
+
+    .pro-pac-og-right-heading {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+@media (width<580px) {
+    .pro-pac-og-card-heading {
+        font-size: 20px;
+    }
+
+    .pro-pac-og-right-heading {
+        text-align: center;
+        font-size: 21px;
+    }
+
+    .pro-pac-og-cards>div {
+        width: calc(100% - 37px);
+    }
+
+    .pro-pac-og-svg {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .pro-pac-og-card-icon {
+        display: flex;
+        width: 76.632px;
+        height: 76.632px;
+        padding: 18px 18.608px 18.632px 18.023px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        left: -37px;
+        border-radius: 77.369px;
+        background: var(--Linear, linear-gradient(90deg, #800080 3.92%, #B466C1 52.78%, #800080 92.42%));
+    }
+
+    .pro-pac-og-card-text {
+
+        gap: 5px;
+    }
+
+    .pro-pac-og-cards>div {
+        padding: 26.5px 19.892px 25.5px 49.523px;
+
+    }
+}
+
+@media (width<480px) {
+
+    .pro-pac-og-cards>div {
+        padding: 12px 10px 12px 46px;
+    }
+}
+
+@media (width<360px) {
+    .pro-pac-section.pro-pac-one-guarantee {
+        padding: 48px 12px;
+    }
+
+    .pro-pac-og-card-heading {
+        font-size: 18px;
+    }
+
+    .pro-pac-og-card-about {
+        font-size: 14px;
+    }
+}

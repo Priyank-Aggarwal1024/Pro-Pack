@@ -1,0 +1,131 @@
+.pro-pac-co-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 42px;
+    column-gap: 24px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pro-pac-co-card {
+    display: flex;
+    padding: 53.988px 70px 52.988px 70px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    background: var(--Color-2, #FFF);
+    box-shadow: 0px 4px 25.3px 0px rgba(137, 137, 137, 0.25);
+    flex-direction: column;
+    width: 440px;
+    height: 336px;
+}
+
+.pro-pac-co-card:nth-of-type(1) {
+    background: linear-gradient(228deg, rgba(128, 0, 128, 0.20) 6.4%, rgba(255, 134, 76, 0.05) 42.44%);
+
+
+}
+
+.pro-pac-co-heading {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 33.6px */
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.pro-pac-co-text {
+    color: #818184;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.pro-pac-co-icon {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pro-pac-co-icon>img {
+    width: 100%;
+}
+
+@media (width<1080px) {
+    .pro-pac-co-card {
+        width: 360px;
+        height: 280px;
+        padding: 20px 30px;
+
+    }
+}
+
+@media (width<780px) {
+    .pro-pac-co-card {
+        width: 46%;
+    }
+
+    .pro-pac-co-cards {
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+
+    .pro-pac-co-heading {
+        font-size: 24px;
+    }
+
+    .pro-pac-co-text {
+        font-size: 15px;
+    }
+
+    .pro-pac-co-icon {
+        width: 66.229px;
+        height: 66.229px;
+    }
+
+    .pro-pac-co-heading {
+        margin-top: 12px;
+    }
+}
+
+@media (width<580px) {
+    .pro-pac-co-heading {
+        font-size: 24px;
+    }
+
+    .pro-pac-co-heading {
+        margin-top: 3px;
+        margin-bottom: 9px;
+    }
+
+    .pro-pac-co-card {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .pro-pac-co-text {
+        font-size: 15px;
+        max-width: 270px;
+    }
+}
+
+@media (width<480px) {
+    .pro-pac-co-heading {
+        font-size: 20px;
+    }
+
+    .pro-pac-co-text {
+        font-size: 14px;
+    }
+}
