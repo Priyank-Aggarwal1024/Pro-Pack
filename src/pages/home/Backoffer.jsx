@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../styles/backoffer.css'
-import O1 from '../../assets/offer1.png'
-import O2 from '../../assets/offer2.png'
-import O3 from '../../assets/offer3.png'
+import O1 from '../../assets/offer1.gif'
+import O2 from '../../assets/offer2.gif'
+import O3 from '../../assets/offer3.gif'
 function Backoffer(props) {
     return (
         <section className="pro-pac-backoffer-section">

@@ -108,7 +108,7 @@
     display: flex;
     width: 103.442px;
     height: 103.442px;
-    padding: 20.96px 21.022px 20.961px 21.021px;
+    /* padding: 20.96px 21.022px 20.961px 21.021px; */
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
@@ -120,6 +120,11 @@
     transform: translateY(-50%);
     /* left: calc(-50% + -20px); */
     z-index: 10;
+}
+
+.pro-pac-bol-card-left>img {
+    width: 100%;
+    height: 100%;
 }
 
 .pro-pac-backoffer-right {
