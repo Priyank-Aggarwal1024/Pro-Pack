@@ -248,12 +248,13 @@
         /* padding: 10px; */
         width: 70px;
         height: 70px;
+        padding: 2px;
     }
 
-    .pro-pac-bol-card-left>img {
+    /* .pro-pac-bol-card-left>img {
         width: 48px;
         height: 48px;
-    }
+    } */
 
     .pro-pac-bol-card {
         padding: 16px 16px 16px 45px;
