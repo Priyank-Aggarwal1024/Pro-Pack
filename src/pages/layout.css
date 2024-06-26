@@ -1,5 +1,45 @@
-.layout {
+.pro-pac-layout {
     width: 100%;
     overflow: hidden;
     min-height: 100vh;
+    position: relative;
+}
+
+.pro-pac-layout-bottom {
+
+    display: none;
+}
+
+body {
+    height: 100vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+
+@media (width<680px) {
+    .pro-pac-layout-bottom {
+
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+        padding: 20px 18px;
+        position: sticky;
+        bottom: 0px;
+        z-index: 100;
+        color: var(--Color-2, #FFF);
+        text-align: center;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        background: var(--800080, rgba(128, 0, 128, 1));
+        box-shadow: 0px 4.279px 9.521px 0px rgba(0, 0, 0, 0.25);
+    }
+
 }

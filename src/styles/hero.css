@@ -228,6 +228,10 @@
     padding: 0;
 }
 
+.pro-pac-hero-right-small {
+    display: none;
+}
+
 @media (width<1080px) {
     .pro-pac-hero-bottom-div-inner {
         justify-content: center;
@@ -244,7 +248,15 @@
     }
 }
 
-@media (width<980px) {
+@media (width<780px) {
+    .pro-pac-hero-right-small {
+        display: flex;
+    }
+
+    .pro-pac-hero-right-large {
+        display: none;
+    }
+
     .pro-pac-hero-section.pro-pac-section {
         flex-direction: column-reverse;
         justify-content: center;

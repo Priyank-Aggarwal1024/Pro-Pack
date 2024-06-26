@@ -175,6 +175,21 @@
     }
 }
 
+@media (width<580px) {
+    section.pro-pac-section-testimonial {
+        padding: 48px 16px;
+    }
+
+    .pro-pac-outer-testimonial-card {
+        padding: 10px;
+    }
+
+    .pro-pac-testimonial-card {
+        gap: 18px;
+        margin: 0;
+    }
+}
+
 @media (width<480px) {
     .pro-pac-outer-testimonial-card {
         padding: 4px;

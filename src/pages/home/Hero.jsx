@@ -13,12 +13,18 @@ function Hero(props) {
                         <h1 className="pro-pac-main-heading pro-pac-wood-smoke-950 pro-pac-fw-600">
                             Master in the field of <span className="pro-pac-text-pink pro-pac-fw-700"> Tech Geeks with 6 Courses</span>
                         </h1>
+                        <div className="pro-pac-hero-right pro-pac-hero-right-small">
+                            <div className="pro-pac-hero-right-design pro-pac-large-hero-design">
+
+                            </div>
+                            <img className="pro-pac-hero-image" src={HeroImg} alt="Hero Image" />
+                        </div>
                         <p className="pro-pac-hero-left-para">A specially crafted Tech Kickstarter, by Industry Experts</p>
                     </div>
                     <ApplyBtn classes="" text=" Apply now for ₹ 1999" />
 
                 </div>
-                <div className="pro-pac-hero-right">
+                <div className="pro-pac-hero-right pro-pac-hero-right-large">
                     <div className="pro-pac-hero-right-design pro-pac-large-hero-design">
 
                     </div>

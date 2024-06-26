@@ -28,6 +28,12 @@
     }
 }
 
+@media (width<650px) {
+    .pro-pac-duration-box {
+        border: none;
+    }
+}
+
 @media (width<580px) {
     .pro-pac-duration-box {
         font-size: 12px;
