@@ -23,7 +23,7 @@ function CareerOptions(props) {
                         <div className="pro-pac-co-icon">
                             <img src={DS} alt="Data Science" />
                         </div>
-                        <div className="pro-pac-co-heading">Data Science</div>
+                        <div className="pro-pac-co-heading">App Developer</div>
                         <div className="pro-pac-co-text">Design, Develop, And Test Machine Learning Systems And Implement ML Algorithms.</div>
                     </div>
                     <div className="pro-pac-co-card">
@@ -37,7 +37,7 @@ function CareerOptions(props) {
                         <div className="pro-pac-co-icon">
                             <img src={AD} alt="App Development" />
                         </div>
-                        <div className="pro-pac-co-heading">App Development</div>
+                        <div className="pro-pac-co-heading">Security Testing</div>
                         <div className="pro-pac-co-text">Identify And Mitigate Security Threats By Testing And Securing Computer Systems</div>
                     </div>
                 </div>

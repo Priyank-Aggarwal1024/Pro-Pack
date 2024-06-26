@@ -192,16 +192,22 @@
 
     .pro-pac-og-card-icon {
         display: flex;
-        width: 76.632px;
-        height: 76.632px;
-        padding: 18px 18.608px 18.632px 18.023px;
+        width: 76px;
+        height: 76px;
+        padding: 18px;
         justify-content: center;
+
         align-items: center;
         flex-shrink: 0;
         left: -37px;
         border-radius: 77.369px;
         background: var(--Linear, linear-gradient(90deg, #800080 3.92%, #B466C1 52.78%, #800080 92.42%));
     }
+
+    /* .pro-pac-og-card-1 .pro-pac-og-card-icon>svg {
+        width: 60px;
+        height: 60px;
+    } */
 
     .pro-pac-og-card-text {
 

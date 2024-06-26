@@ -196,7 +196,7 @@ function Hero(props) {
                                 </svg>
                             </div>
                             <div className="pro-pac-hbb-right">
-                                <div className="pro-pac-hbb-right-heading">18 Months</div>
+                                <div className="pro-pac-hbb-right-heading">24 Months</div>
                                 <span className="pro-pac-hbb-right-para">Fees Back Validity</span>
                             </div>
                         </div>
