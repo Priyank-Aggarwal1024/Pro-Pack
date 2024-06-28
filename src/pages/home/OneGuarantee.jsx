@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../../styles/oneguarantee.css'
 import Certiificate from '../../assets/certificate.png'
 function OneGuarantee(props) {
+
     return (
         <section className="pro-pac-section pro-pac-one-guarantee">
             <h2 className="pro-pac-og-heading pro-pac-f-48 pro-pac-fw-500 pro-pac-text-black">
@@ -67,9 +68,8 @@ function OneGuarantee(props) {
                 <div className="pro-pac-og-right">
                     <img src={Certiificate} alt="One Guarantee Card" className="pro-pac-guarantee-img" />
                     <p className="pro-pac-og-right-heading pro-pac-fw-400 pro-pac-text-black">
-                        {"Certificate of"}
-                        <span className="pro-pac-text-pink pro-pac-fw-600">
-                            {" Micro Interaction"}
+                        <span>{"Certificate of "}</span>
+                        <span className="pro-pac-text-pink pro-pac-micro-interaction pro-pac-fw-600">
                         </span>
                     </p>
                 </div>

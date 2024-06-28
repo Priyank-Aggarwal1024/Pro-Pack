@@ -103,10 +103,14 @@
 
 .pro-pac-og-right-heading {
     font-family: Inter;
-    font-size: 41.33px;
+    font-size: 34px;
     font-style: normal;
     line-height: 120%;
     text-align: start;
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+
     /* 49.596px */
 }
 
@@ -115,7 +119,59 @@
     max-width: 500px;
 }
 
+.pro-pac-micro-interaction {
+    width: 100%;
+    position: relative;
 
+
+}
+
+
+.pro-pac-micro-interaction::after {
+    animation: microInteraction 12s ease infinite;
+    content: "Python";
+    text-align: center;
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    font-weight: 600;
+    color: #800080;
+    font-size: inherit;
+    font-style: normal;
+    line-height: 120%;
+    text-align: start;
+    width: max-content;
+    height: inherit;
+    padding-left: 10px;
+    z-index: 1000;
+}
+
+
+@keyframes microInteraction {
+    0% {
+        content: "Python";
+    }
+
+    16% {
+        content: "App Development";
+    }
+
+    33% {
+        content: "Ethical Hacking";
+    }
+
+    49% {
+        content: "Java";
+    }
+
+    66% {
+        content: "Data Science";
+    }
+
+    83% {
+        content: "MERN Stack";
+    }
+}
 
 @media (width<1180px) {
     .pro-pac-guarantee-img {
@@ -127,12 +183,18 @@
 
     .pro-pac-og-heading {
         width: 100%;
+
     }
 
     .pro-pac-og-right-heading {
-        text-align: center;
         font-size: 35px;
+        flex-direction: row;
+
+
     }
+
+
+
 
     .pro-pac-section-one-guarantee {
         flex-direction: column-reverse;
@@ -150,6 +212,7 @@
         margin-left: unset;
         justify-content: center;
     }
+
 }
 
 @media (width<780px) {
@@ -160,12 +223,12 @@
         height: 320px;
     }
 
+
     .pro-pac-og-card-heading {
         font-size: 25px;
     }
 
     .pro-pac-og-right-heading {
-        text-align: center;
         font-size: 30px;
     }
 }
@@ -175,8 +238,9 @@
         font-size: 20px;
     }
 
+
+
     .pro-pac-og-right-heading {
-        text-align: center;
         font-size: 21px;
     }
 
@@ -221,6 +285,14 @@
 }
 
 @media (width<480px) {
+    .pro-pac-og-heading {
+        flex-wrap: wrap;
+    }
+
+    .pro-pac-og-right-heading {
+        flex-direction: column;
+    }
+
 
     .pro-pac-og-cards>div {
         padding: 12px 10px 12px 46px;

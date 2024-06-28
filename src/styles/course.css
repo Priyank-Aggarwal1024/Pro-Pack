@@ -1,0 +1,118 @@
+.pro-pac-course-card {
+    width: 142.06px;
+    height: 184.109px;
+    flex-shrink: 0;
+    border-radius: 10.228px;
+    background: var(--Color-2, #FFF);
+    box-shadow: 0px 3.075px 14.759px 0px #E7E7E7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 8px;
+    position: relative;
+}
+
+.pro-pac-course-card-plus {
+    position: absolute;
+    top: -10px;
+    right: 5px;
+}
+
+.pro-pac-course-card-icon {
+    border-radius: 5.934px;
+    width: 52.376px;
+    height: 53.623px;
+    /* background: #303030; */
+    box-shadow: -3.741px 4.988px 6.609px 0px rgba(246, 246, 246, 0.31) inset;
+}
+
+.pro-pac-course-card-icon>img {
+    width: 100%;
+    height: 100%;
+}
+
+.pro-pac-course-card-name {
+    color: var(--585858, #585858);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    width: 126px;
+    font-weight: 500;
+    line-height: normal;
+    word-break: break-all;
+    hyphens: auto;
+
+}
+
+.pro-pac-course-price {
+    color: #29BF12;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.pro-pac-course-price-discount {
+    color: #303030;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: line-through;
+}
+
+.pro-pac-course-curriculum-btn {
+    color: #800080;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 123.5%;
+    padding: 8px 0;
+    /* 17.29px */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.409px;
+    border-radius: 5.934px;
+    background: #F6EDF6;
+    position: relative;
+    bottom: 0;
+
+}
+
+@media (width<780px) {
+    .pro-pac-course-curriculum-btn {
+        font-size: 12px;
+        padding: 6px 0;
+    }
+
+    .pro-pac-course-card {
+        width: 125px;
+        height: 162px;
+        padding: 6px;
+    }
+
+    .pro-pac-course-card-plus {
+        width: 23.92px;
+        height: 23.92px;
+        filter: drop-shadow(0px 0px 3.374px rgba(132, 132, 132, 0.25));
+    }
+}
+
+@media (width<580px) {
+    .pro-pac-course-price {
+        font-size: 12px;
+    }
+
+    .pro-pac-course-price-discount {
+        font-size: 10px;
+    }
+}
