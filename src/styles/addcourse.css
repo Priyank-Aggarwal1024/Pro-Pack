@@ -33,6 +33,11 @@
     line-height: normal;
 }
 
+.pro-pac-added-course-right>svg {
+    cursor: pointer;
+
+}
+
 .pro-pac-added-course-border {
     width: 100%;
     height: 0;

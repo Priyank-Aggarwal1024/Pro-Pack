@@ -1,6 +1,8 @@
 .pro-pac-payment-top-outer {
     /* overflow: hidden; */
     width: 100%;
+    position: relative;
+    height: 100%;
 }
 
 
@@ -118,8 +120,8 @@
     display: flex;
     width: 100%;
     height: 58px;
-    padding: 16px;
     justify-content: center;
+    padding: 0 16px;
     gap: 20px;
     align-items: center;
     flex-shrink: 0;
@@ -127,9 +129,7 @@
     background: rgba(128, 0, 128, 0.09);
 }
 
-.pro-pac-pm-bottom>img {
-    height: 100%;
-}
+
 
 .pro-pac-pmrt-coupounapply {
     display: flex;
@@ -139,6 +139,7 @@
     border-radius: 19.871px;
     background: var(--Color-2, #FFF);
     box-shadow: 0px 0px 8.818px 0px rgba(79, 79, 79, 0.12);
+    height: 81px;
 
 }
 
@@ -290,6 +291,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
 }
 
 .pro-pac-pmrbb-coupoun-discount {
@@ -356,6 +358,7 @@
     border-radius: 7.998px;
     background: #800080;
     box-shadow: 0px 4.279px 9.521px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 
 .pro-pac-pm-bottom-small {
@@ -398,7 +401,7 @@
     .pro-pac-payment-main {
         flex-direction: column;
         padding: 32px 32px;
-        gap: 12px;
+        gap: 18px;
 
     }
 
@@ -426,6 +429,7 @@
     .pro-pac-pmrbb-proceed-pay {
         position: sticky;
         bottom: 0;
+        height: 55px;
     }
 
     .pro-pac-payment-top-outer {
@@ -433,8 +437,8 @@
     }
 
     .pro-pac-pml-top {
-        gap: 12px;
-        padding: 14px;
+        gap: 20px;
+        padding: 24px;
     }
 
     .pro-pac-pmrbtr-para1,
@@ -453,7 +457,7 @@
     }
 
     .pro-pac-pmm-heading {
-        margin-top: 12px;
+        margin-top: 18px;
     }
 
     .pro-pac-pm-right {
@@ -467,7 +471,7 @@
     }
 
     .pro-pac-pmm-courses {
-        padding: 8px;
+        padding: 16px 8px 20px;
     }
 
     .pro-pac-pmrb-bottom {
@@ -480,8 +484,14 @@
 
     .pro-pac-pmrt-coupounremove {
         padding: 8px 20px 8px 10px;
-        border-radius: 10px;
+        border-radius: 16px;
         height: auto;
+        height: 62px;
+    }
+
+    .pro-pac-pmrt-coupounapply {
+        height: 62px;
+        border-radius: 16px;
     }
 
     .pro-pac-pmrtcl-head {
@@ -507,12 +517,12 @@
     }
 
     .pro-pac-pmr-bottom {
-        margin-top: 8px;
+        margin-top: 18px;
         gap: 14px;
     }
 
     .pro-pac-pmrb-bottom {
-        gap: 4px;
+        gap: 9px;
     }
 
     .pro-pac-pmrbb-proceed-pay {
@@ -558,6 +568,11 @@
         align-items: center;
         margin-bottom: 12px;
     }
+
+    .pro-pac-pm-bottom {
+        border-radius: 0;
+        height: 51px;
+    }
 }
 
 @media(width<580px) {
@@ -565,8 +580,12 @@
         padding: 32px 32px;
     }
 
+    .pro-pac-payment-nav-right {
+        font-size: 12px;
+    }
+
     .pro-pac-pm-bottom-small {
-        justify-content: space-between;
+        justify-content: space-around;
 
     }
 

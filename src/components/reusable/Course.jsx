@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/course.css'
-function Course({ course }) {
+function Course({ course, setViewCurriculum }) {
     return (
         <>
             <div className="pro-pac-course-card">
@@ -37,7 +37,7 @@ function Course({ course }) {
                     <span>{course.price + " "}</span>
                     <span className="pro-pac-course-price-discount">{course.discount}</span>
                 </div>
-                <div className="pro-pac-course-curriculum-btn">
+                <div className="pro-pac-course-curriculum-btn" onClick={() => setViewCurriculum(true)}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" viewBox="0 0 24 23" fill="none">
                         <g clipPath="url(#clip0_386_275)">
                             <path d="M12.0159 4.48926C7.1951 4.48926 3.07815 7.48779 1.41016 11.7204C3.07815 15.9531 7.1951 18.9516 12.0159 18.9516C16.8367 18.9516 20.9536 15.9531 22.6216 11.7204C20.9536 7.48779 16.8367 4.48926 12.0159 4.48926ZM12.0159 16.5412C9.35481 16.5412 7.1951 14.3815 7.1951 11.7204C7.1951 9.05936 9.35481 6.89965 12.0159 6.89965C14.677 6.89965 16.8367 9.05936 16.8367 11.7204C16.8367 14.3815 14.677 16.5412 12.0159 16.5412ZM12.0159 8.82796C10.4154 8.82796 9.12341 10.1199 9.12341 11.7204C9.12341 13.3209 10.4154 14.6129 12.0159 14.6129C13.6164 14.6129 14.9084 13.3209 14.9084 11.7204C14.9084 10.1199 13.6164 8.82796 12.0159 8.82796Z" fill="#800080" />

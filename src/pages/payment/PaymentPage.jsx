@@ -11,6 +11,8 @@ import SSL from '../../assets/ssl.png'
 import Razorpay from '../../assets/razorpay.png'
 import Course from '../../components/reusable/Course';
 import Ref100 from '../../assets/ref100.png'
+import Curriculum from '../../components/reusable/Curriculum';
+import CoupounApply from "../../components/reusable/CoupounApply";
 function PaymentPage(props) {
     const addedCourse = [
         { name: "Course name ", price: "₹699" },
@@ -39,10 +41,16 @@ function PaymentPage(props) {
             icon: Ci4
         }
     ]
+    const [viewCurriculum, setViewCurriculum] = useState(false)
     const [couponApply, setCouponApply] = useState(true);
+    const [coupoun, setCoupoun] = useState("New60")
     return (
         <>
-            <div className="pro-pac-payment-top-outer">
+            {
+                viewCurriculum ? <Curriculum setViewCurriculum={setViewCurriculum} /> : null
+            }
+            <div className="pro-pac-payment-top-outer" style={{ position: viewCurriculum && "fixed" }}>
+
                 <nav className="pro-pac-payment-nav">
                     <div className="pro-pac-payment-nav-logo">
                         <img src={Logo} alt="TuteDude Logo" />
@@ -67,7 +75,7 @@ function PaymentPage(props) {
                             </div>
                             <div className="pro-pac-pmm-courses">
                                 {
-                                    courseList.map((course, index) => <Course course={course} key={index} />)
+                                    courseList.map((course, index) => <Course course={course} key={index} setViewCurriculum={setViewCurriculum} />)
                                 }
                             </div>
                         </div>
@@ -83,13 +91,15 @@ function PaymentPage(props) {
                             {
                                 couponApply ? <div className="pro-pac-pmrt-coupounapply">
                                     <div className="pro-pac-pmrt-coupounapply-left">
-                                        <p className="pro-pac-pmrtcl-head">New60 <span className="pro-pac-pmrtclh-applied">Applied</span></p>
+                                        <p className="pro-pac-pmrtcl-head">{coupoun} <span className="pro-pac-pmrtclh-applied">Applied</span></p>
                                         <span className="pro-pac-pmrtcl-para">Save another ₹99 on this course   </span>
                                     </div>
                                     <span className="pro-pac-pmrt-coupounapply-right" onClick={() => setCouponApply(false)}>-Remove</span>
+                                    <CoupounApply coupoun={coupoun} />
+                                    {/* <coupo  coupon={coupon} /> */}
                                 </div> :
                                     <div className="pro-pac-pmrt-coupounremove">
-                                        <input type="text" name="coupoun" placeholder="Enter Coupon Code Here " className="pro-pac-pmrt-coupounremove-input" />
+                                        <input type="text" name="coupoun" value={coupoun} placeholder="Enter Coupon Code Here " className="pro-pac-pmrt-coupounremove-input" onChange={(e) => setCoupoun(e.target.value)} />
                                         <div className="pro-pac-pmrt-coupounremove-text" onClick={() => setCouponApply(true)}>Apply</div>
                                     </div>
                             }
@@ -136,6 +146,7 @@ function PaymentPage(props) {
                         <span><b>₹699</b></span>
                     </div>
                 </div>
+
             </div>
         </>
     );

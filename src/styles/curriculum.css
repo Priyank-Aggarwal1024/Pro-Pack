@@ -1,0 +1,282 @@
+.pro-pac-curriculum-payment {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 48px 0;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 101;
+    min-height: 100%;
+    overflow: hidden;
+    animation: curriculum 300ms 1 linear;
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.pro-pac-curriculum-payment-inner {
+    padding: 64px 42px;
+    width: 80vw;
+    min-height: 90vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 21px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.pro-pac-curriculum-payment-top-card {
+    display: flex;
+    gap: 12px;
+}
+
+.pro-pac-curriculum-payment-top {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+    gap: 37px;
+}
+
+.pro-pac-ctc-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9.796px;
+    background: var(--Color-2, #FFF);
+    box-shadow: 0px 1.072px 8.653px 0px rgba(78, 26, 1, 0.35);
+}
+
+.pro-pac-ctc-outer-icon {
+    border-radius: 9.796px;
+
+    width: 72.5px;
+    height: 72.5px;
+    flex-shrink: 0;
+    padding: 5.58px;
+    background: linear-gradient(45deg, rgba(128, 0, 128, 0.418),
+            rgba(255, 133, 76, 0.493));
+}
+
+.pro-pac-ctcm-heading {
+    color: #800080;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    /* 31.2px */
+}
+
+.pro-pac-ctcm-text {
+    color: rgba(0, 0, 0, 0.70);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.pro-pac-ctc-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pro-pac-curriculum-payment-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 56px;
+}
+
+.pro-pac-curriculum-payment-bottom-card {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.pro-pac-curriculum-payment-ques {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: #800080;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-items: center;
+}
+
+.pro-pac-curriculum-payment-ans {
+    padding-top: 16px;
+    color: var(--Grey-30, #4C4C4C);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: -0.096px;
+}
+
+.pro-pac-curriculum-payment-faq {
+    border-radius: 12px;
+    background: var(--Eminence-50, #FCF5FE);
+    box-shadow: 0px 4px 0px 0px rgba(113, 113, 113, 0.07);
+    padding: 16px;
+
+}
+
+.pro-pac-curriculum-payment-checkbox {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: none;
+}
+
+.pro-pac-curriculum-payment-modal-close {
+    display: inline-flex;
+    padding: 18px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 100px;
+    background: #800080;
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    cursor: pointer;
+
+}
+
+@keyframes curriculum {
+    0% {
+        height: 0vh;
+        top: 100%;
+    }
+
+    100% {
+        height: 100%;
+        top: 0;
+    }
+}
+
+.pro-pac-heading-curriculum {
+    font-size: 48px;
+}
+
+
+@media (width<1080px) {
+    .pro-pac-curriculum-payment-inner {
+        padding: 48px 30px;
+    }
+}
+
+@media (width<980px) {
+    .pro-pac-curriculum-payment-bottom {
+        gap: 25px;
+    }
+
+    .pro-pac-ctcm-heading,
+    .pro-pac-ctcm-text {
+        font-size: 19px;
+    }
+
+    .pro-pac-curriculum-payment-top {
+        gap: 22px;
+    }
+
+}
+
+@media (width<780px) {
+    .pro-pac-curriculum-payment-top {
+        gap: 37px;
+    }
+
+    .pro-pac-curriculum-payment-bottom {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, fit-content);
+        gap: 9px;
+    }
+
+    .pro-pac-curriculum-payment-top-card {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .pro-pac-ctc-main {
+        align-items: center;
+    }
+
+    .pro-pac-heading-curriculum {
+        font-size: 36px;
+    }
+
+    .pro-pac-curriculum-payment-modal-close {
+        padding: 9px;
+        gap: 4.675px;
+        border-radius: 27px;
+    }
+
+    .pro-pac-curriculum-payment-modal-close>svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .pro-pac-curriculum-payment-ques {
+        font-size: 19px;
+    }
+
+    .pro-pac-curriculum-payment-ans {
+        font-size: 15px;
+    }
+}
+
+@media (width<580px) {
+    .pro-pac-ctc-outer-icon {
+        width: 63px;
+        height: 63px;
+        flex-shrink: 0;
+        padding: auto;
+    }
+
+    .pro-pac-ctc-icon>svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .pro-pac-curriculum-payment-ques {
+        font-size: 18px;
+    }
+
+    .pro-pac-curriculum-payment-ans {
+        font-size: 14px;
+    }
+
+    .pro-pac-ctcm-heading,
+    .pro-pac-ctcm-text {
+        font-size: 14px;
+    }
+
+    .pro-pac-curriculum-payment-inner {
+        padding: 48px 16px;
+    }
+}
+
+@media (width<480px) {
+
+    .pro-pac-heading-curriculum {
+        font-size: 24px;
+    }
+
+    .pro-pac-curriculum-payment-inner {
+        padding: 48px 12px;
+        width: 90vw;
+
+    }
+}
